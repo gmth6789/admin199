@@ -1,434 +1,467 @@
-<template>
-      <div id="content-page" class="content-page">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-sm-12">
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Grid options</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table..</p>
-                     <table class="table table-bordered table-striped">
-                        <thead>
-                           <tr>
-                              <th></th>
-                              <th class="text-center">
-                                 Extra small<br>
-                                 <small>&lt;576px</small>
-                              </th>
-                              <th class="text-center">
-                                 Small<br>
-                                 <small>≥576px</small>
-                              </th>
-                              <th class="text-center">
-                                 Medium<br>
-                                 <small>≥768px</small>
-                              </th>
-                              <th class="text-center">
-                                 Large<br>
-                                 <small>≥992px</small>
-                              </th>
-                              <th class="text-center">
-                                 Extra large<br>
-                                 <small>≥1200px</small>
-                              </th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <th class="text-nowrap text-left" scope="row">Max container width</th>
-                              <td>None (auto)</td>
-                              <td>540px</td>
-                              <td>720px</td>
-                              <td>960px</td>
-                              <td>1140px</td>
-                           </tr>
-                           <tr>
-                              <th class="text-nowrap text-left" scope="row">Class prefix</th>
-                              <td><code>.col-</code></td>
-                              <td><code>.col-sm-</code></td>
-                              <td><code>.col-md-</code></td>
-                              <td><code>.col-lg-</code></td>
-                              <td><code>.col-xl-</code></td>
-                           </tr>
-                           <tr>
-                              <th class="text-nowrap text-left" scope="row"># of columns</th>
-                              <td colspan="5" class="text-left" >12</td>
-                           </tr>
-                           <tr>
-                              <th class="text-nowrap text-left" scope="row">Gutter width</th>
-                              <td colspan="5" class="text-left">30px (15px on each side of a column)</td>
-                           </tr>
-                           <tr>
-                              <th class="text-nowrap text-left" scope="row">Nestable</th>
-                              <td colspan="5" class="text-left">Yes</td>
-                           </tr>
-                           <tr>
-                              <th class="text-nowrap text-left" scope="row">Column ordering</th>
-                              <td colspan="5" class="text-left">Yes</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Equal-width</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>For example, here are two grid layouts that apply to every device and viewport, from <code>xs</code> to <code>xl</code>. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid">
-                           <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-                           <div class="row mb-3">
-                              <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-                              <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                           </div>
-                           <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-                           <div class="row mb-3">
-                              <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                              <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                              <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                           </div>
-                           <!-- Columns are always 50% wide, on mobile and desktop -->
-                           <div class="row">
-                              <div class="col-6">.col-6</div>
-                              <div class="col-6">.col-6</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Setting one column width</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid">
-                           <div class="row mb-3">
-                              <div class="col">
-                                 1 of 3
-                              </div>
-                              <div class="col-6">
-                                 2 of 3 (wider)
-                              </div>
-                              <div class="col">
-                                 3 of 3
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col">
-                                 1 of 3
-                              </div>
-                              <div class="col-5">
-                                 2 of 3 (wider)
-                              </div>
-                              <div class="col">
-                                 3 of 3
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Variable width content</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Use <code>col-{breakpoint}-auto</code> classes to size columns based on the natural width of their content.</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid">
-                           <div class="row justify-content-md-center mb-3">
-                              <div class="col col-lg-2">
-                                 1 of 3
-                              </div>
-                              <div class="col-md-auto">
-                                 Variable width content
-                              </div>
-                              <div class="col col-lg-2">
-                                 3 of 3
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col">
-                                 1 of 3
-                              </div>
-                              <div class="col-md-auto">
-                                 Variable width content
-                              </div>
-                              <div class="col col-lg-2">
-                                 3 of 3
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Equal-width multi-row</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Create equal-width columns that span multiple rows by inserting a <code>.w-100</code> where you want the columns to break to a new line. Make the breaks responsive by mixing the <code>.w-100</code> with some <a href="https://getbootstrap.com/" target="_blank">responsive display utilities</a>.</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid">
-                           <div class="row">
-                              <div class="col">col</div>
-                              <div class="col">col</div>
-                              <div class="w-100"></div>
-                              <div class="col">col</div>
-                              <div class="col">col</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Responsive classes</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Bootstrap’s grid includes five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
-                     <h4 class="card-title">All breakpoints</h4>
-                     <p>For grids that are the same from the smallest of devices to the largest, use the <code>.col</code> and <code>.col-*</code> classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to <code>.col</code>.</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid">
-                           <div class="row mb-3">
-                              <div class="col">col</div>
-                              <div class="col">col</div>
-                              <div class="col">col</div>
-                              <div class="col">col</div>
-                           </div>
-                           <div class="row">
-                              <div class="col-8">col-8</div>
-                              <div class="col-4">col-4</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Stacked to horizontal</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Using a single set of <code>.col-sm-*</code> classes, you can create a basic grid system that starts out stacked and becomes horizontal at the small breakpoint (<code>sm</code>).</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid">
-                           <div class="row mb-3">
-                              <div class="col-sm-8">col-sm-8</div>
-                              <div class="col-sm-4">col-sm-4</div>
-                           </div>
-                           <div class="row">
-                              <div class="col-sm">col-sm</div>
-                              <div class="col-sm">col-sm</div>
-                              <div class="col-sm">col-sm</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Mix and match</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Don’t want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid">
-                           <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-                           <div class="row mb-3">
-                              <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-                              <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                           </div>
-                           <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-                           <div class="row mb-3">
-                              <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                              <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                              <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                           </div>
-                           <!-- Columns are always 50% wide, on mobile and desktop -->
-                           <div class="row">
-                              <div class="col-6">.col-6</div>
-                              <div class="col-6">.col-6</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Gutters</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Gutters can be responsively adjusted by breakpoint-specific padding and negative margin utility classes. To change the gutters in a given row, pair a negative margin utility on the <code>.row</code> and matching padding utilities on the <code>.col</code>s. The <code>.container</code> or <code>.container-fluid</code> parent may need to be adjusted too to avoid unwanted overflow, using again matching padding utility.</p>
-                     <p>Here’s an example of customizing the Bootstrap grid at the large (<code>lg</code>) breakpoint and above. We’ve increased the <code>.col</code> padding with <code>.px-lg-5</code>, counteracted that with <code>.mx-lg-n5</code> on the parent <code>.row</code> and then adjusted the <code>.container</code> wrapper with <code>.px-lg-5</code>.</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid px-lg-5">
-                           <div class="row mx-lg-n5">
-                              <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
-                              <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Alignment</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Use flexbox alignment utilities to vertically and horizontally align columns. <strong>Internet Explorer 10-11 do not support vertical alignment of flex items when the flex container has a <code>min-height</code> as shown below.</strong> <a href="https://github.com/philipwalton/flexbugs#flexbug-3">See Flexbugs #3 for more details.</a></p>
-                     <h4 class="mb-3">Vertical alignment</h4>
-                     <div class="iq-example-row iq-example-row-flex-cols">
-                        <div class="container-fluid">
-                           <div class="row align-items-start">
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                           </div>
-                           <div class="row align-items-center">
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                           </div>
-                           <div class="row align-items-end">
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                              <div class="col">
-                                 One of three columns
-                              </div>
-                           </div>
-                        </div>
-                        <div class="container-fluid">
-                           <div class="row">
-                              <div class="col align-self-start">
-                                 One of three columns
-                              </div>
-                              <div class="col align-self-center">
-                                 One of three columns
-                              </div>
-                              <div class="col align-self-end">
-                                 One of three columns
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="iq-card">
-                  <div class="iq-card-header d-flex justify-content-between">
-                     <div class="iq-header-title">
-                        <h4 class="card-title">Horizontal alignment</h4>
-                     </div>
-                  </div>
-                  <div class="iq-card-body">
-                     <p>Create equal-width columns that span multiple rows by inserting a <code>.w-100</code> where you want the columns to break to a new line. Make the breaks responsive by mixing the <code>.w-100</code> with some <a href="/docs/4.3/utilities/display/">responsive display utilities</a>.</p>
-                     <div class="iq-example-row">
-                        <div class="container-fluid">
-                           <div class="row justify-content-start mb-3">
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                           </div>
-                           <div class="row justify-content-center mb-3">
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                           </div>
-                           <div class="row justify-content-end mb-3">
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                           </div>
-                           <div class="row justify-content-around mb-3">
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                           </div>
-                           <div class="row justify-content-between">
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                              <div class="col-4">
-                                 One of two columns
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</template>
-
 <script>
 export default {
   middleware: "auth",
 };
+
+
+
 </script>
 
 
-<style>
+<template>
 
-@import '/assets/css/bootstrap.min.css';
-@import '/assets/css/typography.css';
-@import '/assets/css/style.css';
-@import '/assets/css/responsive.css';
+<div class="container">
+  
+  <!-- Batman -->
+  <div class="card u-clearfix">
+    
+    <div class="card-media">
+      <img src="https://s18.postimg.cc/v0mympf7t/lmf1.jpg" alt="" class="card-media-img" />
+      <div class="card-media-preview u-flex-center">
+        <svg fill="#ffffff" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 5v14l11-7z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </div>
+      <span class="card-media-tag card-media-tag-orange">Action</span>
+    </div>
+    
+    <div class="card-body">
+      <h2 class="card-body-heading">Batman</h2>
+      <div class="card-body-options">
+        <div class="card-body-option card-body-option-favorite">
+           <svg fill="#9C948A" height="26" viewBox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg">
+             <path d="M0 0h24v24H0z" fill="none"/>
+             <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/>
+          </svg>
+        </div>
+        <div class="card-body-option card-body-option-share">
+          <svg fill="#9C948A" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+          </svg>
+        </div>
+      </div>
+      <ul class="card-body-stars u-clearfix">
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+      </ul>
+      <a href="#/" class="card-button card-button-cta">
+    ยอดแชร์เฟสบุ๊ค 150 แชร์
+      </a>
+      <a href="#/" class="card-button card-button-link">
+    ยอดคลิก330คลิก
+        <span class="card-button-icon">
+          <svg fill="#9C948A" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+    
+  </div>
+  
+  <!-- Lone Ranger -->
+  <div class="card u-clearfix">
+    
+    <div class="card-media">
+      <img src="https://s12.postimg.cc/t0h9q7999/lmf0.jpg" alt="" class="card-media-img" />
+      <div class="card-media-preview u-flex-center">
+        <svg fill="#ffffff" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 5v14l11-7z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </div>
+      <span class="card-media-tag card-media-tag-brown">New</span>
+    </div>
+    
+    <div class="card-body">
+      <h2 class="card-body-heading">ยอดแชร์เฟสบุ๊ค 150 แชร์ :</h2>
+      <div class="card-body-options">
+        <div class="card-body-option card-body-option-favorite">
+           <svg fill="#9C948A" height="26" viewBox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg">
+             <path d="M0 0h24v24H0z" fill="none"/>
+             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+        <div class="card-body-option card-body-option-share">
+          <svg fill="#9C948A" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+          </svg>
+        </div>
+      </div>
+      <ul class="card-body-stars u-clearfix">
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+      </ul>
+      <a href="#/" class="card-button card-button-cta">
+    ยอดแชร์เฟสบุ๊ค 150 แชร์ :
+      </a>
+      <a href="#/" class="card-button card-button-link">
+    ยอดคลิก330คลิก
+        <span class="card-button-icon">
+          <svg fill="#9C948A" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+    
+  </div>
+  
+  <!-- Superman -->
+  <div class="card u-clearfix">
+    
+    <div class="card-media">
+      <img src="https://s13.postimg.cc/h8spyr37b/lmf2.jpg" alt="" class="card-media-img" />
+      <div class="card-media-preview u-flex-center">
+        <svg fill="#ffffff" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 5v14l11-7z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </div>
+      <span class="card-media-tag card-media-tag-orange">Action</span>
+    </div>
+    
+    <div class="card-body">
+      <h2 class="card-body-heading">Superman</h2>
+      <div class="card-body-options">
+        <div class="card-body-option card-body-option-favorite">
+           <svg fill="#9C948A" height="26" viewBox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg">
+             <path d="M0 0h24v24H0z" fill="none"/>
+             <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/>
+          </svg>
+        </div>
+        <div class="card-body-option card-body-option-share">
+          <svg fill="#9C948A" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+          </svg>
+        </div>
+      </div>
+      <ul class="card-body-stars u-clearfix">
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+        <li>
+          <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11.3l3.71 2.7-1.42-4.36L15 7h-4.55L9 2.5 7.55 7H3l3.71 2.64L5.29 14z"/>
+            <path d="M0 0h18v18H0z" fill="none"/>
+          </svg>
+        </li>
+      </ul>
+      <a href="#/" class="card-button card-button-cta">
+    ยอดแชร์เฟสบุ๊ค 150 แชร์ :
+      </a>
+      <a href="#/" class="card-button card-button-link">
+    ยอดคลิก 100คลิก
+        <span class="card-button-icon">
+          <svg fill="#9C948A" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+    
+  </div>
+  
+</div>
+
+</template>
+
+
+
+<style scoped>
+
+html {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.u-float-right {
+  float: right;
+}
+
+.u-clearfix:before,
+.u-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
+.u-clearfix {
+  *zoom: 1;
+}
+
+.u-flex-center {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.container {
+  margin: 50px auto;
+  width: 560px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  margin-bottom: 65px;
+  width: 100%;
+}
+
+.card-media {
+  float: left;
+  padding: 0 0 25px 25px;
+  position: relative;
+  width: 145px;
+}
+
+.card-media-img {
+  box-shadow: 0 4px 6px rgba(155, 154, 154, 0.3);
+  float: left;
+  margin-top: -25px;
+  position: relative;
+}
+
+.card-media-preview {
+  background-color: #00AEA2;
+  border-radius: 50%;
+  bottom: 11px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+  height: 30px;
+  opacity: 0;
+  position: absolute;
+  left: 70px;
+  transform: translateY(5px);
+  transition: all 300ms ease-out;
+  width: 30px;
+  z-index: 3;
+}
+
+.card-media-preview:hover {
+  background-color: #009d92;
+  box-shadow: 0 0 6px rgba(0,0,0,.16), 0 6px 12px rgba(0,0,0,.32);
+}
+
+.card:hover .card-media-preview {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-media-tag {
+  border-radius: 2px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .22);
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .4px;
+  padding: 5px 8px;
+  position: absolute;
+  left: 110px;
+  text-transform: uppercase;
+  top: -10px;
+}
+
+.card-media-tag-orange {
+  background-color: #FF982C;
+  color: #FFE111;
+}
+
+.card-media-tag-brown {
+  background-color: #f88565;
+  color: #ffe17d;
+}
+
+.card-body {
+  float: left;
+  padding: 25px 25px 25px 20px;
+  width: 415px;
+}
+
+.card-body-heading {
+  color: #6f6f6f;
+  display: inline-block;
+  font-size: 26px;
+}
+
+.card-body-options {
+  float: right;
+}
+
+.card-body-option {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+}
+
+.card-body-stars {
+  list-style-type: none;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.card-body-stars > li {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+}
+
+.card-button {
+  color: #ff34b1;
+  display: inline-block;
+  font-weight: 500;
+  padding: 12px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 200ms ease-out;
+}
+
+.card-button svg {
+  fill: #ff29ad;
+  transition: all 200ms ease-out;
+}
+
+.card-button-cta {
+  background-color: #9C948A;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+  color: #fff;
+}
+
+.card-button-cta:hover {
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, .18);
+  background-color: #13d0ff;
+}
+
+.card-button-link:hover {
+  color: #444;
+}
+
+.card-button-link:hover svg {
+  fill: #444;
+}
+
+.card-button-icon {
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.floating-action-button {
+  background-color: #FF4133;
+  border-radius: 50%;
+  bottom: 25px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  cursor: pointer;
+  height: 56px;
+  position: absolute;
+  right: 25px;
+  transition: all 200ms ease-out;
+  width: 56px;
+}
+
+.floating-action-button:hover {
+  background-color: #ff2111;
+  box-shadow: 0 0 6px rgba(0,0,0,.16), 0 6px 12px rgba(0,0,0,.32);
+}
 
 
 </style>
